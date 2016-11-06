@@ -27,7 +27,7 @@ export function fetchEvent(eventId) {
         return reject(err);
       }
       // so changing it again to [] for sending back to react App.
-      data.Item.attendees = Object.values(data.Item.attendees);      
+      data.Item.attendees = Object.values(data.Item.attendees);
       return resolve(data.Item);
     });
   });
